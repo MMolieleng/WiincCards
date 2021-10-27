@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/dist/client/link";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -41,6 +42,10 @@ const Home: NextPage = () => {
             <p className="py-4">Put your brand on the card</p>
           </div>
         </div>
+      </section>
+
+      <section>
+        <Footer />
       </section>
     </div>
   );

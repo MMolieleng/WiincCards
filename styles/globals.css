@@ -57,3 +57,9 @@ h4 {
   background-size: 56px;
   background-position: center;
 }
+
+.footer {
+  background-color: #181347;
+  padding: 2em;
+  color: azure;
+}
