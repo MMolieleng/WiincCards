@@ -23,7 +23,6 @@ a {
 .hero {
   padding: 6em 0em;
   color: #181347;
-  background-color: antiquewhite;
   margin: 0;
 }
 
@@ -40,4 +39,21 @@ a {
 .btn-primary {
   background-color: #181347;
   border: #181347;
+}
+
+.btn {
+  border-radius: 24px;
+  padding: 12px 32px;
+  width: auto;
+}
+
+h4 {
+  font-weight: 500;
+}
+
+.feature-item {
+  background-image: url("../public/ellipse2.png");
+  background-repeat: no-repeat;
+  background-size: 56px;
+  background-position: center;
 }
