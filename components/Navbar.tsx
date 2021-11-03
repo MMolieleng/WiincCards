@@ -10,7 +10,7 @@ export default function Navbar() {
             <a className="navbar-brand">Wiinc</a>
           </Link>
 
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          {/* <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link href="/business">
@@ -23,7 +23,7 @@ export default function Navbar() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </nav>
     </div>
