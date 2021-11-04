@@ -7,6 +7,9 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.bg-dark {
+  background: blueviolet;
+}
 .navbar {
   background-color: #181347;
 }
@@ -24,8 +27,12 @@ a {
   padding: 6em 0em;
   color: #181347;
   margin: 0;
+  background: #0081f3;
 }
 
+.bg-wiinc {
+  background: #0081f3;
+}
 .cards {
   padding-top: 8em;
 }

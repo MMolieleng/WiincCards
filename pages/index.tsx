@@ -7,7 +7,7 @@ import bankCard from "../public/wiincCard.svg";
 const Home: NextPage = () => {
   return (
     <div>
-      <section className="hero bg-dark text-light">
+      <section className="hero text-light">
         <div className="container px-4">
           <div className="row">
             <div className="col-md-12 py-5 text-center hero">
@@ -22,7 +22,9 @@ const Home: NextPage = () => {
           <div className="row">
             <div className="col-12 text-center">
               <Link href="business">
-                <a className="btn btn-primary">Get Wiinc Card</a>
+                <a className="btn btn-primary bg-light text-dark">
+                  Get Wiinc Card
+                </a>
               </Link>
             </div>
           </div>
@@ -55,7 +57,7 @@ const Home: NextPage = () => {
         </div>
       </section>
 
-      <section className="container-fluid bg-dark text-light text-center">
+      <section className="container-fluid bg-wiinc text-light text-center">
         <div className="container py-4">
           <div className="row">
             <div className="col-12 py-4">

@@ -5,7 +5,7 @@ import styles from "../styles/Navbar.module.css";
 export default function Navbar() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light bg-wiinc">
         <div className="container">
           <Link href="/">
             <a className="navbar-brand">
