@@ -1,30 +1,41 @@
-import { Flex, Stack, Text, Box, HStack } from "@chakra-ui/react";
+import { Flex, Stack, Text, Box, HStack, Heading } from "@chakra-ui/react";
 import Head from "next/head";
 import Link from "next/link";
+import { appName } from "../pages/_app";
 import styles from "../styles/Navbar.module.css";
-// const style = StyleSheetList
+
 export default function Navbar() {
   return (
     <>
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;800&display=swap"
+          rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+      </Head>
       <Flex
         direction={["column", "row"]}
         justifyContent={"space-between"}
         p={[10]}
       >
-        <HStack>
-          <Link href="/">
-            <a className="navbar-brand">
-              <strong>WiincCard</strong>
-            </a>
+        <Stack direction={["column"]}>
+          <Link href="/" passHref>
+            <Heading fontFamily={"Caveat"}>{appName}</Heading>
           </Link>
-        </HStack>
+        </Stack>
         <Stack direction={["column", "row"]}>
-          <Link href="/business">
-            <a className="nav-link active">For Business</a>
+          <Link href="/business" passHref>
+            <Text fontFamily={"Raleway"}>For Business</Text>
           </Link>
 
-          <Link href="/">
-            <a className="nav-link active">Home</a>
+          <Link href="/about" passHref>
+            <Text fontFamily={"Raleway"}>About</Text>
           </Link>
         </Stack>
       </Flex>

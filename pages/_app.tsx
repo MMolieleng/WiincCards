@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import Head from "next/dist/shared/lib/head";
 
 import { ChakraProvider } from "@chakra-ui/react";
+export const appName = "M-Card";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
