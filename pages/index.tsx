@@ -3,22 +3,46 @@ import Image from "next/image";
 import Link from "next/dist/client/link";
 import Footer from "../components/Footer";
 import bankCard from "../public/wiincCard.svg";
+import {
+  Box,
+  Container,
+  Flex,
+  Heading,
+  VStack,
+  Text,
+  Button,
+  Stack,
+} from "@chakra-ui/react";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <>
+      <Box w={"full"} bgColor={"#0f1f38"}>
+        <Container maxW={"container.lg"}>
+          <Stack textAlign={"center"}>
+            <VStack py={[50, 205]}>
+              <Heading fontSize={[50, 100]} textColor={"white"} w={"full"}>
+                Money Card
+              </Heading>
+              <Text
+                textColor={"orange.300"}
+                fontSize={[20, 40]}
+                w={"full"}
+                mb={20}
+              >
+                Softicated card payments solution for you and your business
+              </Text>
+              <Button bgColor={"white"} rounded={"md"} px={20} py={8} mt={10}>
+                Work with us
+              </Button>
+            </VStack>
+            <Image src={bankCard} />
+          </Stack>
+        </Container>
+      </Box>
+
       <section className="hero text-light">
         <div className="container px-4">
-          <div className="row">
-            <div className="col-md-12 py-5 text-center hero">
-              <h3 className="text-light">For Corporate Prepaid Cards</h3>
-              <p className="mt-5 lead text-light">
-                Issue prepaid debit cards employers for travelling, <br />
-                entertainment and online spending
-              </p>
-            </div>
-          </div>
-
           <div className="row">
             <div className="col-12 text-center">
               <Link href="business">
@@ -70,7 +94,7 @@ const Home: NextPage = () => {
       <section>
         <Footer />
       </section>
-    </div>
+    </>
   );
 };
 
